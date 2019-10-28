@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8"> 
+<title>JSON Editor For Security Model</title>
+<link rel="stylesheet" href="./styles.css">
+<script src="./src/ace.js"></script>
+<script src="./src/ext-language_tools.js"></script>
+</head>
+
+<body>
+<input type="file" id="fileElem" style="display:none" accept=".json" onchange="ace.handleFiles(this.files)">
+<a id="jsonDownloader" style="display:none" download="security_model.json"></a>
+<div id="editor" onclick="ace.importDataModel()" onkeypress="ace.importDataModel()"></div>
+<script src="./src/editor.js"></script>
+</body>
+</html>
